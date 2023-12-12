@@ -1,0 +1,44 @@
+.containers{
+    padding:2rem;
+    position: relative;
+}
+
+.description {
+    width: 600px;
+    position: absolute;
+    z-index: 2; /* Increase z-index value */
+    color: aliceblue;
+    top: 20%;
+    left: 20%;
+}
+
+.description h1{
+    font-size: 46px;
+}
+
+.description p {
+    font-size:22px;
+}
+
+.carousel{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 1;
+}
+.carousel ::-webkit-scrollbar {
+	display: none;
+}
+
+.carousel img{
+    flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+    overflow: hidden;
+}

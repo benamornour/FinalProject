@@ -1,0 +1,70 @@
+.div {
+    color: #727272;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Hack, monospace;
+    width:100%;     
+  }
+
+  .img {
+    height : 50px;
+    width: 125px }
+
+  nav {
+    margin: 25px;
+    background: #f9f9f9;
+    padding: 16px;
+  } 
+  
+  nav .menuItems {
+      list-style: none;
+      display: flex;
+  }
+      li {
+        margin: 50px;
+      }
+        a {
+          text-decoration: none;
+          color: #8f8f8f;
+          font-size: 24px;
+          font-weight: 400;
+          transition: all 0.5s ease-in-out;
+          position: relative;
+          text-transform: uppercase;
+        }
+          a::before {
+            content: attr(href);
+            transition: 0.5s;
+            color: #5aa9e6;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            overflow: hidden;
+          }
+  
+          a:hover {
+            &::before {
+              width: 100%;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+        
+
+
+
+  
+/* 
+Color Palette :
+Blue : 5aa9e6
+Light blue : 7fc8f8
+white : f9f9f9
+yellow : ffe45e
+pink : ff6392
+*/

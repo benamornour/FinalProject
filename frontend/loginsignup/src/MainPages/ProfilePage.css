@@ -1,0 +1,72 @@
+/* ProfilePage.css */
+
+.profile-page {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url( C:\Users\lenovo\Documents\HTML\Projet\frontend\loginsignup\src\images\background.jpg );
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .sidebar {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(106, 240, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .sidebar li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .info-box {
+    text-align: center; /* Center the text in the info box */
+  }
+  
+  .info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the info items horizontally */
+  }
+  
+  .info-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    width: 150px; /* Set a fixed width for better alignment */
+  }
+  

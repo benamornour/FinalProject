@@ -1,0 +1,16 @@
+.button {
+    background: red;
+    border: unset;
+    outline: 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #65676b;
+    padding: 5px 10px;
+  }
+  .button.liked {
+    color: white;
+  }
+  .button.liked i{
+    animation: anim 0.5s ease-in-out;
+    -webkit-animation: anim 0.5s ease-in-out;
+  }
